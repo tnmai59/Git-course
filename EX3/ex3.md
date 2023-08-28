@@ -100,5 +100,20 @@ e348ebc1187cb3b4066b1e9432a614b464bf9d07
 ```
 * Ex6: Make a new commit, then switch branches to confirm that you're leaving a commit behind.
 ```
+C:\Users\HP\DSLab\advanced-git-exercises>echo "This is a test file" > dangle.txt
 
+C:\Users\HP\DSLab\advanced-git-exercises>git add dangle.txt
+
+C:\Users\HP\DSLab\advanced-git-exercises>git commit -m "This is a dangling commit"
+[detached HEAD ba2275b] This is a dangling commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 dangle.txt
+
+C:\Users\HP\DSLab\advanced-git-exercises>git log --oneline
+ba2275b (HEAD) This is a dangling commit
+e348ebc (tag: my-exercise3-tag, tag: exercise3-annotated-tag, origin/exercise3, exercise3) Testing the emergency git-casting system
+43388fe (origin/master, origin/exercise7, origin/exercise4, origin/exercise2, origin/HEAD, master) Initial commit
+
+C:\Users\HP\DSLab\advanced-git-exercises>type .git\HEAD
+ba2275b902d61be9c554f73c113100e43b650edd
 ```
