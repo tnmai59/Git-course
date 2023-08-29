@@ -90,6 +90,12 @@ C:\Users\HP\DSLab\advanced-git-exercises>git log -n 3 --oneline
 6f929a4 Adding a new feature
 0a0d76f (master) Master has continued to change
 
+C:\Users\HP\DSLab\advanced-git-exercises>git rebase -i HEAD~1
+error: invalid command 'rpick'
+error: invalid line 1: rpick 22b1259 Adding another new feature
+You can fix this with 'git rebase --edit-todo' and then run 'git rebase --continue'.    
+Or you can abort the rebase with 'git rebase --abort'.
+
 C:\Users\HP\DSLab\advanced-git-exercises>git log --oneline
 6f929a4 (HEAD) Adding a new feature
 0a0d76f (master) Master has continued to change
