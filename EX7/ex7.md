@@ -75,3 +75,23 @@ C:\Users\HP\DSLab\advanced-git-exercises>git log --oneline
 43388fe (origin/master, origin/exercise7, origin/exercise4, origin/exercise2, origin/HEAD) Initial commit
 ```
 3. Make another change to your current branch. Use an interactive rebase (git rebase -i) to rebase the two branches. Try squashing your two commits and rewording the message during the rebase.
+```
+C:\Users\HP\DSLab\advanced-git-exercises>echo "Another new feature" > another_feature.txt
+
+C:\Users\HP\DSLab\advanced-git-exercises>git add another_feature.txt
+
+C:\Users\HP\DSLab\advanced-git-exercises>git commit -m "Adding another new feature"
+[exercise7-2 22b1259] Adding another new feature
+ 1 file changed, 1 insertion(+)
+ create mode 100644 another_feature.txt
+
+C:\Users\HP\DSLab\advanced-git-exercises>git log -n 3 --oneline
+22b1259 (HEAD -> exercise7-2) Adding another new feature
+6f929a4 Adding a new feature
+0a0d76f (master) Master has continued to change
+
+C:\Users\HP\DSLab\advanced-git-exercises>git log --oneline
+6f929a4 (HEAD) Adding a new feature
+0a0d76f (master) Master has continued to change
+43388fe (origin/master, origin/exercise7, origin/exercise4, origin/exercise2, origin/HEAD) Initial commit
+```
